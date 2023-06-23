@@ -1,0 +1,8 @@
+.shop_container {
+    background: #f7f8fa;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 7% 80% auto;
+}

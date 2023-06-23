@@ -1,0 +1,68 @@
+.notification_container {
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: #FFFFFF;
+    box-shadow: 0px 2px 5px 0px rgba(38, 51, 77, 0.09);
+    color: #C3CAD9;
+
+}
+
+.red {
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background: #E62E7B;
+    border-radius: 50%;
+    margin: 0 39px;
+}
+
+.bell {
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.side_menu {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: #FFFFFF;
+    box-shadow: 0px 2px 5px 0px rgba(38, 51, 77, 0.09);
+    color: #C3CAD9;
+}
+
+.side_menu_container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.side_menu_user {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: #FFFFFF;
+    box-shadow: 0px 2px 5px 0px rgba(38, 51, 77, 0.09);
+    color: #C3CAD9;
+}
+
+.side_menu_user img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+.side_menu_container_wrapper {
+    border-right: 3px solid #EDEFF2;
+}

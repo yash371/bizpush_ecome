@@ -1,0 +1,143 @@
+@font-face {
+    font-family: 'Gilroy';
+    src: url('../fonts/Gilroy-ExtraBold.otf') format('truetype');
+    /* Add more variations if necessary */
+}
+
+@font-face {
+    font-family: 'Gilroy-Light';
+    src: url('../fonts/Gilroy-Light.otf') format('truetype');
+    /* Add more variations if necessary */
+}
+
+.shop_container {
+    background: #f7f8fa;
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: #FFFFFF;
+    box-shadow: 0px 2px 5px 0px rgba(38, 51, 77, 0.09);
+    color: #C3CAD9;
+}
+
+#menu {
+    display: flex;
+    align-items: center;
+}
+
+#menu p {
+    font-family: 'Gilroy';
+    color: #4D5e80;
+    font-size: 18px;
+}
+
+.menu_item {
+    display: flex;
+    align-items: center;
+    font-family: 'Gilroy';
+    font-size: 13px;
+    color: #7D8FB3;
+}
+
+.search_container input {
+    font-size: 14px;
+    font-family: 'Gilroy';
+    color: rgba(173, 184, 204, 1);
+    width: 270px;
+    height: 60px;
+    padding: 15px 40px 15px 5px;
+    border: none;
+}
+
+input[type="search"] {
+    outline: none;
+}
+
+.search_container {
+    width: 298px;
+    height: 60px;
+    background: #FFFFFF;
+    box-shadow: 0px 2px 5px 0px rgba(38, 51, 77, 0.09);
+    border-radius: 30px;
+    color: #7D8FB3;
+    display: flex;
+    align-items: center;
+}
+
+::placeholder {
+    color: #7D8FB3;
+    opacity: 1;
+}
+
+.profile_container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.profile_container p {
+    font-family: 'Gilroy';
+    color: #4D5e80;
+    font-size: 14px;
+}
+
+.notification_container {
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: #FFFFFF;
+    box-shadow: 0px 2px 5px 0px rgba(38, 51, 77, 0.09);
+    color: #C3CAD9;
+
+}
+
+.cancle_container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: #FFFFFF;
+    box-shadow: 0px 2px 5px 0px rgba(38, 51, 77, 0.09);
+    color: #C3CAD9;
+}
+
+.red {
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background: #E62E7B;
+    border-radius: 50%;
+    margin: 0 39px;
+}
+
+.bell {
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.row {
+    display: flex;
+    justify-content: space-around;
+    border-bottom: 3px solid #EDEFF2;
+    padding: 1rem 0;
+}
+
+.menu_item:nth-child(2),
+:nth-child(3),
+:nth-child(4),
+:nth-child(5),
+:nth-child(6) {
+    margin-left: 1.5rem;
+}

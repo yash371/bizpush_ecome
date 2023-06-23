@@ -1,0 +1,191 @@
+@font-face {
+    font-family: 'Gilroy';
+    src: url('../fonts/Gilroy-ExtraBold.otf') format('truetype');
+    /* Add more variations if necessary */
+}
+
+@font-face {
+    font-family: 'Gilroy-Light';
+    src: url('../fonts/Gilroy-Light.otf') format('truetype');
+    /* Add more variations if necessary */
+}
+
+#heading {
+    text-decoration: underline;
+    font-family: 'Gilroy';
+    color: #677DA8;
+}
+
+h1 {
+    font-family: 'Gilroy';
+    color: #677DA8;
+    margin-bottom: 10px;
+    font-size: 51px;
+    line-height: 70.81px;
+}
+
+.dommy_text {
+    color: #677DA8;
+    font-family: 'Gilroy-Light';
+    font-weight: 500;
+    font-size: small;
+    margin: 1.5rem 0;
+}
+
+#shop_now_btn {
+    background-color: #ffffff;
+    cursor: pointer;
+    z-index: 99;
+    color: #677DA8;
+    font-family: 'Gilroy-Light';
+    font-size: 21px;
+    line-height: 26px;
+    font-weight: 700;
+    letter-spacing: 1.2px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    border: none;
+    padding: 15px 35px;
+    border-radius: 9px;
+    margin-top: 1.5rem;
+}
+
+.header_container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.inner_header_container {
+    margin-right: 30px;
+}
+
+.mainbox{
+    display: grid;
+    grid-template-columns: 0.9fr 0fr 0.6fr;
+    gap: 10px;
+}
+
+.box{
+    padding: 20px;
+}
+
+.arrow{
+    position: absolute;
+    margin: 28px 0px 0px -110px;
+}
+
+.review{
+    margin: 110px 0px 0px 85px;
+    position: absolute;
+}
+
+#review{
+    color:#677DA8;
+    font-Size: 13px;
+    font-family: "Gilroy-Light";
+    font-weight: 900;
+    padding: 5px;
+    letter-spacing: 0.5px;
+}
+
+#number_rating{
+    color:#677DA8;
+    font-Size: 20px;
+    font-family: "Gilroy";
+    font-weight: 900;
+    margin-right: 10px;
+}
+
+.mainbox02{
+    display: grid;
+    grid-template-columns: 1fr -1fr;
+    gap: 10px;
+    margin-left: 10rem;
+}
+
+.box02{
+    /* padding: 20px; */
+}
+
+.offer{
+    position: absolute;
+    padding: 15px;
+    width: 16%;
+    margin: -5rem 22rem;
+    border:0.93px solid #0000;
+    border-radius: 10px;
+    letter-spacing: 0.5px;
+    background:
+        linear-gradient(#f5f8ff,#f8f8f8) padding-box,
+        linear-gradient(143deg, rgba(225,66,170,1) 0%, rgba(254,254,254,1) 50%, rgba(115,255,255,1) 100%) border-box;
+}
+
+#msg01{
+    color: #677DA8;
+    font-family: "Gilroy";
+    font-size: 15px;
+}
+
+#msg02{
+    color: #677DA8;
+    font-family: "Gilroy-Light";
+    font-size: 13px;
+    margin-top: 6px;
+}
+
+@media only screen and (max-width: 768px) { 
+    .inner_header_container {
+        margin-right: 0px;
+        margin-top: 30px;
+    }
+    h1 {
+        margin-bottom: 0px;
+        font-size: 25px;
+        line-height: 31px;
+    }
+    .dommy_text {
+        font-size: 11px;
+        margin: 10px 0px 0px 0px;
+    }
+    #shop_now_btn{
+        font-size: 12px;
+        line-height: 0px;
+        padding: 15px 15px;
+    }
+    .box{
+        padding: 0px;
+    }
+    .arrow {
+        height: 115px;
+        margin: 20px 0px 0px -160px;
+    }
+    .mainbox {
+        margin-bottom: 35rem;
+    }
+    .review {
+        margin: 70px 0px 0px 0px;
+    }
+    #number_rating {
+        font-Size: 15px;
+        margin-right: 5px;
+    }
+    #review {
+        font-Size: 10px;
+        padding: 2px;
+    }
+    .mainbox02{
+        height: 5rem;
+        margin-left: 0rem;
+    }
+    .box02 img{
+        position: absolute;
+        height: 25rem;
+        margin: -5rem 0rem 0rem -24rem;
+    }
+    .offer {
+        position: absolute;
+        padding: 15px;
+        width: 50%;
+        margin: 15rem 0rem 0rem -13rem;
+    }
+}

@@ -110,17 +110,38 @@
     padding: 8px 10px;
     border: 1px solid #00000026;
 }
-.active{
-    
-}
-@media only screen and (max-width: 600px) {
 
-   .product {
-    display: none;
-    font-weight: bolder;
-   }
-   .two{
-    display: none;
-   }
+.active{
+    background-color: #fff !important;
+    color: #687eaa !important;
+    margin-right: 10px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+
+.active_button{
+    display: none !important;
+}
+
+.KeyboardArrowDownIcon{
+    margin-left: 5px;
+}
+
+@media only screen and (max-width: 768px) {
+
+    .product, .selectall, .two, .midtitle {
+        display: none;
+    }
+
+    .row {
+        padding: 1rem 1rem;
+    }
+
+    .icon{
+        margin-right: 0px;
+    }
+
+    .active_button{
+        display: block !important;
+    }
 
 }

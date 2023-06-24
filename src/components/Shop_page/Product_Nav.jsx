@@ -9,6 +9,7 @@ import EditIcon from "@mui/icons-material/Edit";
 import DeleteIcon from "@mui/icons-material/Delete";
 import ViewHeadlineIcon from "@mui/icons-material/ViewHeadline";
 import ViewModuleIcon from "@mui/icons-material/ViewModule";
+import KeyboardArrowDownIcon from '@mui/icons-material/KeyboardArrowDown';
 
 const Product_Nav = () => {
   return (
@@ -41,9 +42,12 @@ const Product_Nav = () => {
         </div>
       
         <div className={styles.three}>
-        <button className={styles.active}>
-            Active   
-        </button>
+          <div className={styles.active_button}>
+            <button className={styles.active}>
+                Active
+                <KeyboardArrowDownIcon className={styles.KeyboardArrowDownIcon} fontSize="small" />
+            </button>
+          </div>
           <button>
             <AddCircleIcon className={styles.AddCircleIcon} fontSize="small" />
             Add Product
@@ -60,7 +64,7 @@ const Product_Nav = () => {
             />
           </p>
           <p>
-            <b>Select All</b>
+            <b className={styles.selectall}>Select All</b>
           </p>
         </div>
         <div className={styles.five}>
@@ -68,7 +72,7 @@ const Product_Nav = () => {
             <p>
               <FilterListIcon className={styles.icon} fontSize="small" />
             </p>
-            <p>
+            <p className={styles.midtitle}>
               <b>Filters</b>
             </p>
           </div>
@@ -77,7 +81,7 @@ const Product_Nav = () => {
             <p>
               <SearchIcon className={styles.icon} fontSize="small" />
             </p>
-            <p>
+            <p className={styles.midtitle}>
               <b>Search</b>
             </p>
           </div>
@@ -86,7 +90,7 @@ const Product_Nav = () => {
             <p>
               <EditIcon className={styles.icon} fontSize="small" />
             </p>
-            <p>
+            <p className={styles.midtitle}>
               <b>Edit</b>
             </p>
           </div>
@@ -95,7 +99,7 @@ const Product_Nav = () => {
             <p>
               <DeleteIcon className={styles.icon} fontSize="small" />
             </p>
-            <p>
+            <p className={styles.midtitle}>
               <b>Delete</b>
             </p>
           </div>

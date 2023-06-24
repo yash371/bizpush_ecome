@@ -19,19 +19,19 @@ function Navbar() {
                     <p>Constructor</p>
                 </div>
                 <div className='menu_item'>
-                    <p>Dashboard</p>
-                    <p>About Us</p>
-                    <p>News</p>
-                    <p>User Policy</p>
-                    <p>Contacts</p>
-                    <MoreHorizIcon />
+                    <p><b>Dashboard</b></p>
+                    <p><b>About Us</b></p>
+                    <p><b>News</b></p>
+                    <p><b>User Policy</b></p>
+                    <p><b>Contacts</b></p>
+                    <b><MoreHorizIcon /></b>
                 </div>
                 <div className='search_container'>
-                    <SearchIcon style={{ margin: "0 0 0 25" }} />
+                    <SearchIcon style={{ margin: "0 0 0 20" }} />
                     <input type="search" placeholder='Search Transactions and Documents' />
                 </div>
                 <div className='profile_container'>
-                    <AccountCircleIcon style={{ color: "#C3CAD9" }} />
+                    <AccountCircleIcon className='AccountCircleIcon' style={{ color: "#C3CAD9", marginRight: "10px" }} />
                     <p>Clayton Santos</p>
                     <div className='notification_container'>
                         <div className='red'></div>

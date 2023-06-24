@@ -18,12 +18,13 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 50px;
-    height: 50px;
+    width: 40px;
+    height: 40px;
     border-radius: 50%;
     background: #FFFFFF;
     box-shadow: 0px 2px 5px 0px rgba(38, 51, 77, 0.09);
     color: #C3CAD9;
+    margin-right: 2rem;
 }
 
 #menu {
@@ -40,23 +41,24 @@
 .menu_item {
     display: flex;
     align-items: center;
-    font-family: 'Gilroy';
+    font-family: 'Gilroy-Light';
     font-size: 13px;
     color: #7D8FB3;
 }
 
 .search_container input {
-    font-size: 14px;
-    font-family: 'Gilroy';
+    font-size: 13px;
+    font-family: 'Gilroy-Light';
     color: rgba(173, 184, 204, 1);
     width: 270px;
     height: 60px;
-    padding: 15px 40px 15px 5px;
+    padding: 15px 5px 15px 5px;
     border: none;
 }
 
 input[type="search"] {
     outline: none;
+    border-radius: 30px;
 }
 
 .search_container {
@@ -85,6 +87,12 @@ input[type="search"] {
     font-family: 'Gilroy';
     color: #4D5e80;
     font-size: 14px;
+    margin-right: 20px;
+}
+
+.AccountCircleIcon{
+    color: #C3CAD9;
+    margin-right: 10px;
 }
 
 .notification_container {
@@ -108,6 +116,7 @@ input[type="search"] {
     background: #FFFFFF;
     box-shadow: 0px 2px 5px 0px rgba(38, 51, 77, 0.09);
     color: #C3CAD9;
+    margin-left: 10px;
 }
 
 .red {
@@ -129,15 +138,12 @@ input[type="search"] {
 
 .row {
     display: flex;
-    justify-content: space-around;
+    justify-content:  space-between;
     border-bottom: 3px solid #EDEFF2;
-    padding: 1rem 0;
+    padding: 1rem 2rem;
 }
 
-.menu_item:nth-child(2),
-:nth-child(3),
-:nth-child(4),
-:nth-child(5),
-:nth-child(6) {
-    margin-left: 1.5rem;
+.menu_item p{
+    margin-left: 0.8rem;
+    margin-right: 0.8rem;
 }

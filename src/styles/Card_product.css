@@ -84,20 +84,23 @@
     padding: 15px 25px;
     border-radius: 30px;
 }
-.product_img{
+
+.product_img {
     min-width: 200px;
     min-height: 150px;
     display: flex;
     justify-content: center;
     align-items: center;
 }
-@media only screen and (max-width: 1229px) { 
-    .card_container{
+
+@media only screen and (max-width: 1229px) {
+    .card_container {
         grid-template-columns: 50% 50%;
     }
 }
-@media only screen and (max-width: 340px) { 
-    .card_container{
-        grid-template-columns: auto;
+
+@media only screen and (max-width: 460px) {
+    .card_container {
+        grid-template-columns: 100%;
     }
 }

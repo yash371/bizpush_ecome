@@ -4,5 +4,5 @@
 
 .grid-container {
     display: grid;
-    grid-template-columns: 7% 80% auto;
+    grid-template-columns: 7% 75% 18%;
 }

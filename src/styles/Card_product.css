@@ -1,0 +1,82 @@
+@font-face {
+    font-family: 'Gilroy';
+    src: url('../fonts/Gilroy-ExtraBold.otf') format('truetype');
+    /* Add more variations if necessary */
+}
+
+@font-face {
+    font-family: 'Gilroy-Light';
+    src: url('../fonts/Gilroy-Light.otf') format('truetype');
+    /* Add more variations if necessary */
+}
+
+.card_container {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    padding: 3rem;
+    gap: 10px;
+}
+
+.select {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background: #FFFFFF;
+    box-shadow: 0px 2px 5px 0px rgba(38, 51, 77, 0.09);
+}
+
+.selected {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background: #8833FF;
+}
+
+.shop_card_container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.shop_card_container :nth-child(2) {
+    font-family: 'Gilroy';
+    color: #6B7A99;
+    margin-top: 2rem;
+}
+
+.shop_card_container :nth-child(3) {
+    font-family: 'Gilroy-Light';
+    color: #6B7A99;
+    margin-top: 2rem;
+    border: none;
+    background: #FFFFFF;
+    box-shadow: 0px 2px 5px 0px rgba(38, 51, 77, 0.09);
+    padding: 15px 25px;
+    border-radius: 30px;
+}
+
+.card_shop_wrapper {
+    margin: 20px 10px;
+}
+
+.load_more {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 2rem;
+}
+
+.load_more button {
+    font-family: 'Gilroy';
+    color: #6B7A99;
+    margin-top: 2rem;
+    border: none;
+    background: #FFFFFF;
+    box-shadow: 0px 2px 5px 0px rgba(38, 51, 77, 0.09);
+    padding: 15px 25px;
+    border-radius: 30px;
+}

@@ -1,4 +1,4 @@
-.row{
+.row {
     display: flex;
     justify-content: space-between;
     padding: 1rem 2rem;
@@ -6,7 +6,10 @@
     margin-bottom: 0px;
     border-bottom: 3px solid #EDEFF2;
 }
-.one, .two, .three {
+
+.one,
+.two,
+.three {
     display: flex;
     align-items: center;
     font-family: 'Gilroy-Light';
@@ -14,7 +17,7 @@
     color: #7D8FB3;
 }
 
-.ShoppingBasketIcon{
+.ShoppingBasketIcon {
     color: #7d8fb3bd;
 }
 
@@ -23,18 +26,18 @@
     padding: 0px 0px 20px 0;
 }
 
-.product_title{
+.product_title {
     color: #687eaa;
 }
 
-.product{
+.product {
     background-color: #fff;
     padding: 2px 4px;
     margin-right: 15px;
     border-radius: 5px;
 }
 
-.three button{
+.three button {
     display: flex;
     font-family: 'Gilroy-Light';
     align-items: center;
@@ -47,20 +50,22 @@
     letter-spacing: 0.5px;
 }
 
-.Active{
+.Active {
     color: #8833FF;
     border-bottom: 1px solid #8833FF;
     padding: 0px 0px 20px 0;
 }
 
-.AddCircleIcon{
+.AddCircleIcon {
     margin-right: 5px;
     color: #ffffffbd;
 }
 
 /* ///////////////////////////////////// */
 
-.four, .five, .six {
+.four,
+.five,
+.six {
     display: flex;
     align-items: center;
     font-family: 'Gilroy-Light';
@@ -68,12 +73,12 @@
     color: #7D8FB3;
 }
 
-.CheckCircleIcon{
+.CheckCircleIcon {
     color: #7d8fb3bd;
     margin-right: 10px;
 }
 
-.check{
+.check {
     display: flex;
     align-items: center;
 }
@@ -84,7 +89,10 @@
     font-family: 'Gilroy-Light';
 }
 
-.middle01, .middle02, .middle03, .middle04{
+.middle01,
+.middle02,
+.middle03,
+.middle04 {
     display: flex;
     align-items: center;
     background-color: #fff;
@@ -92,13 +100,48 @@
     border: 1px solid #00000026;
 }
 
-.icon{
+.icon {
     margin-right: 5px;
     color: #7d8fb3bd;
 }
 
-.last_title{
+.last_title {
     background-color: #fff;
     padding: 8px 10px;
     border: 1px solid #00000026;
+}
+
+.active{
+    background-color: #fff !important;
+    color: #687eaa !important;
+    margin-right: 10px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+
+.active_button{
+    display: none !important;
+}
+
+.KeyboardArrowDownIcon{
+    margin-left: 5px;
+}
+
+@media only screen and (max-width: 768px) {
+
+    .product, .selectall, .two, .midtitle {
+        display: none;
+    }
+
+    .row {
+        padding: 1rem 1rem;
+    }
+
+    .icon{
+        margin-right: 0px;
+    }
+
+    .active_button{
+        display: block !important;
+    }
+
 }

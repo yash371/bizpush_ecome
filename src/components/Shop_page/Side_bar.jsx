@@ -17,9 +17,12 @@ function Side_bar() {
                     <div className='side_menu'><ExploreIcon /></div>
                     <div className='side_menu'><StarIcon /></div>
                     <div>
-                        <div className='side_menu'>
+                        <div className='dis_block '>
                             <div className='message'></div>
+                            <div className='icon_holder'>
+
                             <MapsUgcIcon />
+                            </div>
                         </div>
                     </div>
                     <div className='side_menu'><MovingIcon /></div>
@@ -27,11 +30,13 @@ function Side_bar() {
                     <div className='side_menu'><ApartmentIcon /></div>
                 </div>
                 <div className='side_menu_container second'>
-                    <div className='side_menu02 side_02'>
+                    <div className='side_menu02 side_02 '>
                         <AddCircleIcon />
                     </div>
-                    <div className='side_menu_user side_02'>
-                        <img src="/assets/Avatar_1.png" alt="avatar" />
+                    <div className='dis_block'>
+                    <div className='message bg_blue'></div>
+                    <div className='icon_holder'>
+                        <img src="/assets/Avatar_1.png" alt="avatar" style={{width:"40px"}} /></div>
                     </div>
                     <div className='side_menu_user side_02'>
                         <img src="/assets/Avatar_2.png" alt="avatar" />

@@ -31,8 +31,12 @@ function Navbar() {
                     <input type="search" placeholder='Search Transactions and Documents' />
                 </div>
                 <div className='profile_container'>
-                    <AccountCircleIcon className='AccountCircleIcon' style={{ color: "#C3CAD9", marginRight: "10px" }} />
+                    <AccountCircleIcon className='AccountCircleIcon' id="profile_icon" style={{ color: "#C3CAD9", marginRight: "10px" }} />
                     <p>Clayton Santos</p>
+                    <div className='search_container display_NONE'>
+                    <SearchIcon style={{ margin: "0 0 0 20" }} />
+                    <input type="search" placeholder='Search Transactions and Documents' />
+                </div>
                     <div className='notification_container'>
                         <div className='red'></div>
                         <div className='bell'>
@@ -41,6 +45,9 @@ function Navbar() {
                     </div>
                     <div className='cancle_container'>
                         <CancelIcon />
+                    </div>
+                    <div className='cancle_container display_NONE_XD'>
+                        <AccountCircleIcon  style={{fontSize:'large'}}/>
                     </div>
                 </div>
             </div>

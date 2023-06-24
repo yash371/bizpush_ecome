@@ -61,6 +61,10 @@
 
 .card_shop_wrapper {
     margin: 20px 10px;
+    background: #FAFBFC;
+    /* box-shadow: 0px 2px 5px 0px rgba(38, 51, 77, 0.09); */
+    border-radius: 10px;
+    padding: 20px;
 }
 
 .load_more {
@@ -79,4 +83,21 @@
     box-shadow: 0px 2px 5px 0px rgba(38, 51, 77, 0.09);
     padding: 15px 25px;
     border-radius: 30px;
+}
+.product_img{
+    min-width: 200px;
+    min-height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+@media only screen and (max-width: 1229px) { 
+    .card_container{
+        grid-template-columns: 50% 50%;
+    }
+}
+@media only screen and (max-width: 340px) { 
+    .card_container{
+        grid-template-columns: auto;
+    }
 }

@@ -20,7 +20,9 @@ function Card_product() {
                                             </div>
                                     }
                                     <div className='shop_card_container'>
+                                        <div className="product_img">
                                         <img src={item.image} alt="product" />
+                                        </div>
                                         <p>{item.title}</p>
                                         <button>${item.price}</button>
                                     </div>

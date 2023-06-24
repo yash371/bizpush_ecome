@@ -13,7 +13,10 @@ function Shop() {
                 <Navbar />
                 <div className='grid-container'>
                     <Side_bar />
-                    <Product />
+                    <div className='product_wrpp'>
+                        <Product />
+                    </div>
+
                     <Analysis />
                 </div>
             </div>

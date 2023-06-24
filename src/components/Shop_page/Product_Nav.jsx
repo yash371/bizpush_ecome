@@ -1,4 +1,4 @@
-import React,{Component} from 'react';
+import React from 'react';
 import styles from '../../styles/product_nav.module.css';
 import ShoppingBasketIcon from '@mui/icons-material/ShoppingBasket';
 import AddCircleIcon from '@mui/icons-material/AddCircle';

@@ -16,7 +16,12 @@ function Side_bar() {
                 <div className='side_menu_container'>
                     <div className='side_menu'><ExploreIcon /></div>
                     <div className='side_menu'><StarIcon /></div>
-                    <div className='side_menu'><MapsUgcIcon /></div>
+                    <div>
+                        <div className='side_menu'>
+                            <div className='message'></div>
+                            <MapsUgcIcon />
+                        </div>
+                    </div>
                     <div className='side_menu'><MovingIcon /></div>
                     <div className='side_menu'><PublicIcon /></div>
                     <div className='side_menu'><ApartmentIcon /></div>

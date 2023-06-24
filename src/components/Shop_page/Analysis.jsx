@@ -1,55 +1,55 @@
 import React from 'react'
-import './Analysis.css'
-import {analysisorders} from  '../../constants/data.js'
+import '../../styles/Analysis.css'
+import { analysisorders } from '../../constants/data.js'
 
 
 function Analysis() {
-    const analysisArray=[{
-        title:"Total Sales",
-        price:"$281.90",
-        chart:"/assets/analysis/Chart1.svg",
-        child:(<SalesChartChild/>),
+    const analysisArray = [{
+        title: "Total Sales",
+        price: "$281.90",
+        chart: "/assets/analysis/Chart1.svg",
+        child: (<SalesChartChild />),
     },
     {
-        title:"Total Sessions",
-        price:"456",
-        chart:"/assets/analysis/Chart2.svg",
-        child:(<SessionChild/>),
+        title: "Total Sessions",
+        price: "456",
+        chart: "/assets/analysis/Chart2.svg",
+        child: (<SessionChild />),
     },
     {
-        title:"Customer rate",
-        price:"5.43%",
-        chart:"/assets/analysis/Chart3.svg",
-        child:(<CustomerRateChild/>),
+        title: "Customer rate",
+        price: "5.43%",
+        chart: "/assets/analysis/Chart3.svg",
+        child: (<CustomerRateChild />),
     }
     ];
     return (
-       <section className="analysis-wrapper">
-        {
-            analysisArray.map(item =>(
-                <CardComponent {...item} />
-            ))
-        }
-        
-        <ActionComponent/>
+        <section className="analysis-wrapper">
+            {
+                analysisArray.map(item => (
+                    <CardComponent {...item} />
+                ))
+            }
+
+            <ActionComponent />
         </section>
     )
 }
 
 export default Analysis
 
-const CardComponent=(props)=>{
-    return(
+const CardComponent = (props) => {
+    return (
         <div className="analysis-card">
             <div className="analysis-card-content">
                 <div className="card-content-left">
                     <div className="card-content-title">{props.title}</div>
                     <div className="card-conent-price">
-                    {props.price}
+                        {props.price}
                     </div>
                 </div>
                 <div className="card-content-right">
-                   <img src={props.chart} alt="Heee" />
+                    <img src={props.chart} alt="Heee" />
                 </div>
             </div>
             <div className="analysis-card-footer">
@@ -59,39 +59,39 @@ const CardComponent=(props)=>{
     );
 }
 
-const SalesChartChild=()=>{
+const SalesChartChild = () => {
     return (
         <>
-        <div className="chart-text">6 total orders</div>
-        <div className="chart-text">View report</div>
+            <div className="chart-text">6 total orders</div>
+            <div className="chart-text">View report</div>
         </>
     )
 }
 
-const SessionChild=()=>{
+const SessionChild = () => {
     return (
         <>
-        <div className="live-box">Live</div>
-        <div className="chart-text">4 vistors</div>
-        <div className="chart-text">See Live View</div>
+            <div className="live-box">Live</div>
+            <div className="chart-text">4 vistors</div>
+            <div className="chart-text">See Live View</div>
         </>
     )
 }
 
-const CustomerRateChild=()=>{
+const CustomerRateChild = () => {
     return (
         <div className='chart_CONTENT'>
-        <div className="chart-text">
-            <div className="circle-content bg-purple"></div>
-            First Time</div>
-        <div className="chart-text">
-        <div className="circle-content bg-orange"></div>
-            Returning</div>
+            <div className="chart-text">
+                <div className="circle-content bg-purple"></div>
+                First Time</div>
+            <div className="chart-text">
+                <div className="circle-content bg-orange"></div>
+                Returning</div>
         </div>
     )
 }
 
-const ActionComponent=()=>{
+const ActionComponent = () => {
     return (
         <div className="action-card">
             <div className="action-card-head">
@@ -105,28 +105,28 @@ const ActionComponent=()=>{
             </div>
             <div className="action-card-content">
                 {
-                    analysisorders.map(item=>(
-                        <OrdersItemContent {...item}/>
+                    analysisorders.map(item => (
+                        <OrdersItemContent {...item} />
                     ))
                 }
-                
+
             </div>
         </div>
     );
 }
 
-const OrdersItemContent=(props)=>{
+const OrdersItemContent = (props) => {
     return (
         <div className="order-item-content">
-                <div className="content-item-left">
-                    <div className="item-box">{
+            <div className="content-item-left">
+                <div className="item-box">{
                     props.time}</div>
-                    <div className="item-line"></div>
-                </div>
-                <div className="content-item-right">
+                <div className="item-line"></div>
+            </div>
+            <div className="content-item-right">
                 {
-                props.title}
-                </div>
-        </div>    )
+                    props.title}
+            </div>
+        </div>)
 }
 

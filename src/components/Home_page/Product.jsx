@@ -1,6 +1,6 @@
 import React from 'react'
-import "../styles/product.css"
-import { product } from "../constants/data"
+import "../../styles/product.css"
+import { product } from "../../constants/data"
 import FavoriteBorderIcon from '@mui/icons-material/FavoriteBorder';
 import StarIcon from '@mui/icons-material/Star';
 

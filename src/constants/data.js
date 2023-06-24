@@ -36,3 +36,31 @@ export const product = [
         }
     }
 ]
+
+
+export const analysisorders=[
+    {
+        time:"11:32",
+        title:"New Category Added «Mobile phones»"
+    },
+    {
+        time:"11:21",
+        title:"New Product Added «Apple iphones 9»"
+    },
+    {
+        time:"10:54",
+        title:"New Product Added «Apple iPad Pro 12.9»"
+    },
+    {
+        time:"09:45",
+        title:"New Category Added «Mobile phones»"
+    },
+    {
+        time:"09:45",
+        title:"New Category Added «Mobile phones»"
+    },
+    {
+        time:"09:45",
+        title:"New Category Added «Mobile phones»"
+    }
+]
